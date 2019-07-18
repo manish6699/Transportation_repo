@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgb(255,0,0);
+	/*background-image: url(pic3.jpg);
+	background-position: center;
+   */
+
+}
+
+.signupbox{
+	width: 320px;
+	height: 620px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	opacity: 0.7;
+	text-align: center;
+}
+	
+</style>
+<?php
+
+?>
+<head>
+	<title>signup</title>
+</head>
+<body>
+<div class="signupbox">	
+<h1>Signup as Transporter</h1>
+	<form action="signuptran.php" class="">
+		<p>user name:</p>
+		 <input type="text" placeholder="username" name="t_name">
+		 <p>password:</p>
+		 <input type="password" placeholder="password" minlength="8" name="t_pass">
+		 <p>address:</p>
+		 <input type="text" placeholder="permanent address" name="t_address">
+		  <p>ph no.:</p>
+		 <input type="tel" placeholder="phone no." maxlength="10" name="t_ph_no">
+		 <p>vehicle no.:</p>
+		 <input type="text" max="6" placeholder="veh_no" name="veh_no">
+		 <p>vehicle type:</p>
+		 <input type="text" placeholder="A-heavy:B-medium:C-light" name="veh_type">
+		 <p>email id:</p>
+		 <input type="email" placeholder="demo123@gmail.com" name="t_email">
+		 <br>
+		 <br>
+		<input type="submit" name="Signup" value="Signup">
+	</form>
+	</div>		
+</body>
+</html>

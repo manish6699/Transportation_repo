@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+body{
+	margin: 0;
+	padding: 0;
+	background-color: rgb(0,0,255);
+	/*background-image: url(pic3.jpg);
+	background-position: center;
+   */
+
+}
+
+.signupbox{
+	width: 320px;
+	height: 500px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	opacity: 0.7;
+	text-align: center;
+}
+	
+</style>
+<?php
+
+?>
+<head>
+	<title>signup</title>
+</head>
+<body>
+<div class="signupbox">	
+<h1>Signup as customer</h1>
+	<form action="signupcus.php" method="post">
+		<p>user name:</p>
+		 <input type="text" placeholder="username" name="c_cus_name">
+		 <p>password:</p>
+		 <input type="password" placeholder="password" name="c_pass">
+		 <p>address:</p>
+		 <input type="text" placeholder="address" name="c_address">
+		  <p>ph no.:</p>
+		 <input type="tel" placeholder="phone no." name="c_ph_no">
+		 <p>email:</p>
+		 <input type="email" placeholder="demo@123gmail.com" name="c_email">
+		 <br>
+		 <br>
+		<input type="submit" name="Signup" value="Signup">
+	</form>
+	</div>		
+</body>
+</html>
