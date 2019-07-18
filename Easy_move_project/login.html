@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<style type="text/css">
+	body{
+	margin: 0;
+	padding: 0;
+	background-color: rgb(0,0,255);
+	/*background-image: url(pic3.jpg);
+	background-position: center;
+   */
+
+}
+
+.loginbox{
+	width: 320px;
+	height: 420px;
+	background: #000;
+	color: #fff;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	opacity: 0.7;
+	text-align: center;
+}
+
+.below{
+	margin-top: 50px;
+}
+
+.avatar{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	position: absolute;
+	top: -50px;
+	left: calc(50% - 50px);
+}
+</style>
+<?php
+
+
+
+
+?>
+<head>
+	<title>login page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="logstyle.css">
+<body>
+	<div class="loginbox">
+	<img src="avatar.png" class="avatar">
+	<div class="below">
+	<h1>Login</h1>
+	<form action="login.php" method="post">
+		<p>user name:</p>
+		 <input type="text" placeholder="username" name="name">
+		 <p>password:</p>
+		 <input type="password" placeholder="password" name="pass">
+		 <p>user type:</p>
+		 <input type="text" placeholder="transpoter or customer" name="u_type"><br><br>
+		<input type="submit" name="login" value="login">
+	</form>		
+	</div>	
+	</div>
+</body>
+</html>
